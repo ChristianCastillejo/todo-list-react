@@ -1,15 +1,41 @@
 import React from "react";
-// import { useTranslation } from "react-i18next";
 
 function Home() {
-  // const { t } = useTranslation();
-
   return (
     <div className="screen home-container">
-      <div className="home-hero-img">
-        <div className="home-hero-text">Antonio Escohotado</div>
+      <div className="add-todo">
+        <textarea placeholder="Add something..." />
+        <button>
+          <i className="fa fa-plus-circle" />
+          <p>Add todo</p>
+        </button>
       </div>
-      <div className="home-next" />
+      <div className="todo-list">
+        <div className="todo-item">
+          <div className="todo-item-buttons">
+            <button>
+              <i className="fa fa-times" />
+            </button>
+          </div>
+          <p>blabla</p>
+        </div>
+        <div className="todo-item">
+          <div className="todo-item-buttons">
+            <button>
+              <i className="fa fa-times" />
+            </button>
+          </div>
+          <p>blabla</p>
+        </div>
+        <div className="todo-item">
+          <div className="todo-item-buttons">
+            <button>
+              <i className="fa fa-times" />
+            </button>
+          </div>
+          <p>blabla</p>
+        </div>
+      </div>
     </div>
   );
 }

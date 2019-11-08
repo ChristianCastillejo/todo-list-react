@@ -1,9 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 // import cookie from "react-cookies";
 import Loading from "./components/loading";

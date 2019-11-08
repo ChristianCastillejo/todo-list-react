@@ -11,7 +11,7 @@ function Menu() {
           to="/"
           onClick={() => setOpenMenu(false)}
         >
-          <p>{openMenu ? "asd" : "Antonio Escohotado"}</p>
+          <p>{openMenu ? "asd" : "Todo list"}</p>
         </Link>
         <Link
           className="menu-item"
@@ -23,7 +23,7 @@ function Menu() {
       </div>
       <div className="mobile-layout">
         <Link className="mobile-layout-title" to="/">
-          <p>Antonio Escohotado</p>
+          <p>Todo list</p>
         </Link>
         <div
           className="mobile-layout-icon"
