@@ -5,7 +5,7 @@ body {
 }
 .screen{
     margin-top: 70px;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 70px);
 }
 
 @import "colors";
@@ -13,3 +13,4 @@ body {
 @import "loading";
 @import "login";
 @import "home";
+@import "footer";

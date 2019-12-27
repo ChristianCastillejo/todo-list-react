@@ -1,10 +1,12 @@
 import React, { Fragment, useState } from "react";
 import useReactRouter from "use-react-router";
 import { Link } from "react-router-dom";
+import { logout } from "../actions/session";
 
 function Menu() {
   const [openMenu, setOpenMenu] = useState(false);
   const { location } = useReactRouter();
+
   return (
     <Fragment>
       <div className={`menu-container menu-container${!openMenu && "--close"}`}>
@@ -19,7 +21,7 @@ function Menu() {
           <Link
             className="menu-item menu-item--logout"
             to="/login"
-            onClick={() => setOpenMenu(false)}
+            onClick={() => logout()}
           >
             <p className="menu-item-p">Logout</p>
           </Link>

@@ -2,7 +2,7 @@ import { axiosInstance } from "../helpers/configured_axios";
 import { FETCH_TODO_LIST } from "./actionTypes";
 
 export const fetchTodoList = () => {
-  const request = axiosInstance.get("/todos/");
+  const request = axiosInstance.get("/todos");
 
   return {
     type: FETCH_TODO_LIST,

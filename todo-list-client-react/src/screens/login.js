@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import propTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
+import cookie from "react-cookies";
 import { login } from "../actions/session";
 
 export default function Login({ history }) {
@@ -9,13 +10,13 @@ export default function Login({ history }) {
 
   useEffect(
     () => {
-      if (session.id) {
+      if (session.id && cookie.load("jwt")) {
         history.push(`/`);
       }
     },
     [session, history]
   );
-  console.log(session);
+  debugger;
   return (
     <div className="login-screen">
       <div className="login-container">

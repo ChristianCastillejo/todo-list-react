@@ -5,7 +5,7 @@ export const sessionReducer = (state = {}, { type, payload }) => {
     case FETCH_LOGGED_IN_USER:
       return payload.data;
     case LOGOUT:
-      return payload;
+      return state;
     default: {
       return state;
     }

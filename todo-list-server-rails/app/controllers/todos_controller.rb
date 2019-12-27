@@ -4,7 +4,7 @@ class TodosController < ApplicationController
   # GET /todos
   def index
     # get current user todos
-    @todos = Todo.all
+    @todos = Todo.all.order(created_at: :desc)
     json_response(@todos)
   end
 
